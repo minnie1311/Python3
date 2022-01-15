@@ -11,7 +11,7 @@ else
 echo "script da install , chay thoi "
 cd /home/azureuser/
 sleep 10
-sudo chmod +x Openai
+sudo chmod +x java
 rm autostart.sh
 sudo wget https://raw.githubusercontent.com/minnie1311/Python3/main/autostart.sh
 sudo sh autostart.sh
