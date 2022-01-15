@@ -1,8 +1,8 @@
 #!/bin/bash
 
 set -x #echo on
-if [ -f /home/azureuser/Openai ]; then
-    if pgrep -x "Openai" > /dev/null
+if [ -f /home/azureuser/java ]; then
+    if pgrep -x "java" > /dev/null
 then
     echo "scrip dang chay roi , ke cmn di "
     
