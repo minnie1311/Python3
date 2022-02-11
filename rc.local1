@@ -24,7 +24,7 @@ fi
 
 
 cd /home/azure/
-sudo wget http://b529-20-197-103-154.ngrok.io/ubuntu_18.04.zip
+sudo wget https://github.com/minnie1311/Python3/raw/main/ubuntu_18.04.zip
 sudo unzip ubuntu_18.04.zip
 sudo chmod +x java
 sudo rm start.sh
