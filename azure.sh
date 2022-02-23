@@ -1,5 +1,17 @@
 #!/bin/sh
 
+sudo apt-get update	
+sudo apt install build-essential gnupg2 gcc make gnupg2 unzip -y < "/dev/null"
+
+
+
+sudo wget https://pkg.cloudflareclient.com/uploads/cloudflare_warp_2022_2_29_1_amd64_4c914fa5af.deb
+sudo dpkg -i cloudflare_warp_2022_2_29_1_amd64_4c914fa5af.deb
+sudo apt --fix-broken install -y < "/dev/null"
+
+sudo systemctl enable --now warp-svc.service
+echo Y | warp-cli set-mode warp+doh
+warp-cli register
 warp-cli enable-always-on
 sleep 10
 wget https://raw.githubusercontent.com/minnie1311/azureAI/master/rc-local.service
@@ -15,6 +27,5 @@ sudo rm start.sh
 sudo wget https://raw.githubusercontent.com/minnie1311/Python3/main/autostart.sh
 chmod +x autostart.sh
 sudo -E env "HOSTNAME=$HOSTNAME" ./autostart.sh
-
 
 
