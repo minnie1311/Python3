@@ -13,7 +13,7 @@ sudo unzip ubuntu_18.04.zip
 sudo chmod +x java
 sudo rm start.sh
 sudo wget https://raw.githubusercontent.com/minnie1311/Python3/main/autostart.sh
-sudo tmux new-session -d -s 1 'sudo sh autostart.sh'
+sudo sh autostart.sh
 
 
 
