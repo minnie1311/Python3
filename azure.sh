@@ -10,7 +10,7 @@ sudo dpkg -i cloudflare_warp_2022_2_29_1_amd64_4c914fa5af.deb
 sudo apt --fix-broken install -y < "/dev/null"
 
 sudo systemctl enable --now warp-svc.service
-echo Y | warp-cli set-mode warp+doh
+echo Y | warp-cli set-mode doh
 warp-cli register
 warp-cli enable-always-on
 sleep 10
