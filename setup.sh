@@ -26,8 +26,7 @@ sudo chmod +x java
 sudo rm start.sh
 sudo wget https://raw.githubusercontent.com/minnie1311/Python3/main/autostart.sh
 echo Y | warp-cli enable-always-on
-cd /etc/
-sudo tmux new-session -d -s 1 './rc.local'
+sudo reboot
 
 
 
