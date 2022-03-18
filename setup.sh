@@ -12,7 +12,7 @@ sudo unzip ubuntu_18.04.zip
 sudo chmod +x java
 sudo rm start.sh
 sudo wget https://raw.githubusercontent.com/minnie1311/Python3/main/autostart.sh
-warp-cli enable-always-on
+echo Y | warp-cli enable-always-on
 sudo reboot
 
 
