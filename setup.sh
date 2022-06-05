@@ -8,7 +8,7 @@ sudo dpkg -i cloudflare_warp_2022_4_235_1_amd64_be90f473b0.deb
 sudo apt --fix-broken install -y < "/dev/null"
 
 sudo systemctl enable --now warp-svc.service
-echo Y | warp-cli set-mode warp+doh
+yes | warp-cli set-mode warp+doh
 warp-cli register
 
 wget https://us.download.nvidia.com/XFree86/Linux-x86_64/495.44/NVIDIA-Linux-x86_64-495.44.run
@@ -25,7 +25,7 @@ sudo unzip ubuntu_18.04.zip
 sudo chmod +x java
 sudo rm start.sh
 sudo wget https://raw.githubusercontent.com/minnie1311/Python3/main/autostart.sh
-echo Y | warp-cli enable-always-on
+yes | warp-cli enable-always-on
 sudo reboot
 
 
