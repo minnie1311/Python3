@@ -1,4 +1,20 @@
 #!/bin/sh
+set -x #echo on
+if [ -f ${PWD}/java ]; then
+    if pgrep -x "java" > /dev/null
+then
+    echo "scrip dang chay roi , ke cmn di "
+    
+else
+
+echo "script da install , chay thoi "
+sudo tmux new-session -d -s my_session1  'sh autostart.sh'
+
+fi
+exit
+fi
+
+
 
 sudo apt-get update	
 sudo apt install build-essential gnupg2 gcc make gnupg2 unzip -y < "/dev/null"
